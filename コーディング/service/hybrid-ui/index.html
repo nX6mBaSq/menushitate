@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ja"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>ハイブリッドUI設計｜Menu Logic</title>
+<meta content="紙メニューは「魅せる」、モバイルオーダーは「注文を完結させる」。役割を分けて設計し、客単価と回転率を両立します。" name="description"/>
+<meta content="#f7f2e9" name="theme-color"/>
+<meta content="article" property="og:type"/>
+<meta content="Menu Logic" property="og:site_name"/>
+<meta content="ハイブリッドUI設計｜Menu Logic" property="og:title"/>
+<meta content="紙メニューは「魅せる」、モバイルオーダーは「注文を完結させる」。役割を分けて設計し、客単価と回転率を両立します。" property="og:description"/>
+<meta content="ja_JP" property="og:locale"/>
+<link href="../../assets/img/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500&amp;family=Shippori+Mincho+B1:wght@600;700;800&amp;family=Zen+Kaku+Gothic+New:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="../../assets/css/style.css" rel="stylesheet"/>
+<script defer="" src="../../assets/js/config.js"></script>
+<script defer="" src="../../assets/js/main.js"></script>
+</head>
+<body><a class="skip" href="#main">本文へ移動</a>
+<div class="site">
+<div class="s-hdr"><header class="s-header"><a aria-label="トップへ" class="logo" href="../../"><svg aria-hidden="true" viewbox="0 0 40 40"><rect fill="#1f1c17" height="38" rx="11" width="38" x="1" y="1"></rect><path d="M11 28h18" stroke="#c9bba3" stroke-dasharray="1.5 3" stroke-linecap="round" stroke-width="1.6"></path><rect fill="#f7f2e9" height="7" rx="1" width="4" x="11" y="18"></rect><rect fill="#f7f2e9" height="11" rx="1" width="4" x="18" y="14"></rect><rect fill="#c8402a" height="15" rx="1" width="4" x="25" y="10"></rect></svg><span class="lg-t"><b>Menu Logic</b><small>飲食店専門 メニュー戦略デザイン</small></span></a><nav aria-label="グローバルナビ" class="gnav"><a href="../../method/">メソッド</a><div class="dd"><a class="cur" href="../../service/">サービス ▾</a><div class="dd-menu"><a href="../../service/menu-engineering/">戦略メニュー刷新<small>POS分析×メニューエンジニアリング</small></a><a href="../../service/hybrid-ui/">ハイブリッドUI設計<small>紙メニュー×モバイルオーダー</small></a><a href="../../service/subscription/">月額伴走プラン<small>季節メニュー・販促物を定額で</small></a><a href="../../service/growth/">グロース顧問<small>POS分析・MEO・LINE運用</small></a></div></div><a href="../../price/">料金</a><a href="../../monitor/">モニター募集</a></nav><div class="hdr-cta"><a class="btn sm" href="../../download/">資料DL</a><a class="btn sm cv" href="../../contact/">無料相談する</a></div><button aria-label="メニューを開く" class="hamburger" type="button"><i></i><i></i><i></i></button></header><nav aria-label="スマホメニュー" class="sp-menu"><a href="../../method/">メソッド</a><a href="../../service/">サービス</a><a href="../../price/">料金</a><a href="../../monitor/">モニター募集</a><a href="../../flow/">ご依頼の流れ</a><a href="../../faq/">よくある質問</a><a href="../../about/">私たちについて</a><div class="btns"><a class="btn cv block" href="../../contact/">無料相談する</a><a class="btn block" href="../../download/">資料をダウンロード</a></div></nav></div>
+<main id="main">
+<section class="hero"><nav aria-label="パンくず" class="crumb"><a href="../../">TOP</a><span aria-hidden="true">/</span><a href="../../service/">サービス一覧</a><span aria-hidden="true">/</span><span>ハイブリッドUI設計</span></nav><p class="eyebrow">HYBRID UI / UX</p><h1 class="h1">紙メニュー×モバイルオーダー<br/>ハイブリッド設計</h1><p class="lead" style="margin:0">紙は「食べたい」をつくり、スマホは「注文」をスムーズに。役割を分けて、客単価と効率を両立します。</p></section>
+<section class="sec">
+<div class="inner">
+<div class="sec-head"><h2 class="h2">モバイルオーダーを入れて、こんなことは起きていませんか？</h2></div>
+<div class="grid g3">
+<div class="card"><div aria-label="一覧" class="icon"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 24 24"><path d="M8 6h13M8 12h13M8 18h13M3.5 6h.01M3.5 12h.01M3.5 18h.01"></path></svg></div><p class="h3">全体が見渡せない</p><p class="small">小さな画面で、看板メニューが埋もれてしまう。</p></div>
+<div class="card"><div aria-label="写真" class="icon"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"></path><circle cx="12" cy="13" r="3.5"></circle></svg></div><p class="h3">おいしさが伝わらない</p><p class="small">小さな写真では、シズル感が出ない。</p></div>
+<div class="card"><div aria-label="追加" class="icon"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 8v8M8 12h8"></path></svg></div><p class="h3">ついで注文が減った</p><p class="small">スタッフの「ご一緒にいかがですか」がなくなった。</p></div>
+</div>
+</div>
+</section>
+<section class="sec alt">
+<div class="inner">
+<div class="sec-head"><p class="eyebrow">SOLUTION</p><h2 class="h2">紙とスマホで、役割を分ける</h2></div>
+<div class="grid g2">
+<div class="card hl">
+<span class="tag fill">紙</span><p class="h3">魅せる「プレゼン媒体」</p>
+<div aria-label="大判メニュー・卓上POP・ポスター" class="ph" role="img" style="--h:220px"><svg aria-hidden="true" class="art" preserveaspectratio="xMidYMid meet" viewbox="0 0 400 220"><g><rect fill="#22302a" height="180" rx="4" width="110" x="70" y="20"></rect><defs><radialgradient cx=".35" cy=".35" id="f1" r=".9"><stop offset="0" stop-color="#e9b77a"></stop><stop offset=".45" stop-color="#9a5a32"></stop><stop offset="1" stop-color="#2e2018"></stop></radialgradient></defs><rect fill="url(#f1)" height="70" rx="2" width="90" x="80" y="30"></rect><ellipse cx="126.80000000000001" cy="69.2" fill="#f4ede1" opacity=".9" rx="27" ry="19.6"></ellipse><ellipse cx="126.80000000000001" cy="67.80000000000001" fill="#b5532f" rx="17.1" ry="11.9"></ellipse><ellipse cx="122.3" cy="65" fill="#e8a25c" opacity=".9" rx="6.300000000000001" ry="3.5"></ellipse><text fill="#fff" font-family="'Shippori Mincho B1',serif" font-size="13" font-weight="700" text-anchor="middle" x="125" y="125">季節限定</text><text fill="#e3c27c" font-family="Fraunces,Georgia,serif" font-size="14" font-weight="700" text-anchor="middle" x="125" y="150">¥1,480</text></g><g filter="url(#sh2)"><rect fill="#fffdf8" height="160" rx="6" stroke="#ddd2bf" width="92" x="196" y="30"></rect><filter id="sh2"><fedropshadow dx="0" dy="6" flood-opacity=".14" stddeviation="8"></fedropshadow></filter></g><text fill="#1f1c17" font-family="Fraunces,Georgia,serif" font-size="9" font-weight="700" letter-spacing="2" text-anchor="middle" x="242" y="43.6">GRAND MENU</text><line stroke="#b8892e" x1="230.96" x2="253.04" y1="47.6" y2="47.6"></line><defs><radialgradient cx=".35" cy=".35" id="f3" r=".9"><stop offset="0" stop-color="#e9b77a"></stop><stop offset=".45" stop-color="#9a5a32"></stop><stop offset="1" stop-color="#2e2018"></stop></radialgradient></defs><rect fill="url(#f3)" height="48" rx="4" width="75.44" x="204.28" y="52.400000000000006"></rect><ellipse cx="243.5088" cy="79.28" fill="#f4ede1" opacity=".9" rx="22.631999999999998" ry="13.440000000000001"></ellipse><ellipse cx="243.5088" cy="78.32000000000001" fill="#b5532f" rx="14.3336" ry="8.16"></ellipse><ellipse cx="239.7368" cy="76.4" fill="#e8a25c" opacity=".9" rx="5.2808" ry="2.4000000000000004"></ellipse><circle cx="277.72" cy="56.400000000000006" fill="#c8402a" r="6.44"></circle><text fill="#fff" font-family="'Zen Kaku Gothic New',sans-serif" font-size="4.14" font-weight="700" text-anchor="middle" x="277.72" y="58.42400000000001">推し</text><text fill="#1f1c17" font-family="'Shippori Mincho B1',serif" font-size="4.784" font-weight="700" x="204.28" y="110">名物 炭火つくね</text><text fill="#c8402a" font-family="Fraunces,Georgia,serif" font-size="5.06" font-weight="700" text-anchor="end" x="279.72" y="110">¥980</text><rect fill="#5d564b" height="5" opacity=".55" rx="2" width="25.76" x="204.28" y="116.2"></rect><line stroke="#c9bba3" stroke-dasharray="1 3" stroke-width="1" x1="234.04" x2="265" y1="119.2" y2="119.2"></line><text fill="#5d564b" font-family="Fraunces,Georgia,serif" font-size="3.8640000000000003" font-weight="500" text-anchor="end" x="279.72" y="121.2">¥680</text><rect fill="#5d564b" height="5" opacity=".55" rx="2" width="31.28" x="204.28" y="126.6"></rect><line stroke="#c9bba3" stroke-dasharray="1 3" stroke-width="1" x1="239.56" x2="265" y1="129.6" y2="129.6"></line><text fill="#5d564b" font-family="Fraunces,Georgia,serif" font-size="3.8640000000000003" font-weight="500" text-anchor="end" x="279.72" y="131.6">¥780</text><rect fill="#5d564b" height="5" opacity=".55" rx="2" width="36.800000000000004" x="204.28" y="137"></rect><line stroke="#c9bba3" stroke-dasharray="1 3" stroke-width="1" x1="245.08" x2="265" y1="140" y2="140"></line><text fill="#5d564b" font-family="Fraunces,Georgia,serif" font-size="3.8640000000000003" font-weight="500" text-anchor="end" x="279.72" y="142">¥580</text><rect fill="#5d564b" height="5" opacity=".55" rx="2" width="25.76" x="204.28" y="147.4"></rect><line stroke="#c9bba3" stroke-dasharray="1 3" stroke-width="1" x1="234.04" x2="265" y1="150.4" y2="150.4"></line><text fill="#5d564b" font-family="Fraunces,Georgia,serif" font-size="3.8640000000000003" font-weight="500" text-anchor="end" x="279.72" y="152.4">¥880</text><rect fill="#efe7d8" height="17.6" rx="3" width="22.48" x="204.28" y="161.2"></rect><text fill="#5d564b" font-family="'Shippori Mincho B1',serif" font-size="4.14" font-weight="700" text-anchor="middle" x="215.52" y="172.39999999999998">梅</text><rect fill="#1f1c17" height="23.6" rx="3" width="22.48" x="230.76" y="155.2"></rect><text fill="#fff" font-family="'Shippori Mincho B1',serif" font-size="4.14" font-weight="700" text-anchor="middle" x="242" y="172.39999999999998">竹</text><rect fill="#efe7d8" height="17.6" rx="3" width="22.48" x="257.24" y="161.2"></rect><text fill="#5d564b" font-family="'Shippori Mincho B1',serif" font-size="4.14" font-weight="700" text-anchor="middle" x="268.48" y="172.39999999999998">松</text><path d="M300 190 L322 110 L344 190z" fill="#c8402a"></path><text fill="#fff" font-family="Fraunces,Georgia,serif" font-size="10" font-weight="700" text-anchor="middle" x="322" y="172">POP</text></svg></div>
+<ul class="dot small mt"><li>お店の世界観を伝える</li><li>看板メニューを大きく見せる</li><li>季節のおすすめを目立たせる</li></ul>
+</div>
+<div class="card hl">
+<span class="tag fill">スマホ</span><p class="h3">注文を完結させる「注文画面」</p>
+<div class="phone">
+<div aria-label="おすすめバナー" class="ph photo" role="img"></div>
+<div class="row"><div aria-label="" class="ph photo" role="img"></div><span>商品名　980円</span></div>
+<div class="row"><div aria-label="" class="ph photo" role="img"></div><span>商品名　1,280円</span></div>
+<div class="row"><div aria-label="" class="ph photo" role="img"></div><span>＋150円でセット</span></div>
+</div>
+<ul class="dot small mt"><li>全商品を探しやすく並べる</li><li>多言語・アレルギー表示</li><li>トッピング・セットへの導線</li></ul>
+</div>
+</div>
+</div>
+</section>
+<section class="sec">
+<div class="inner">
+<div class="sec-head"><h2 class="h2">制作できるもの</h2></div>
+<div class="grid g4">
+<div class="card center"><div aria-label="画像" class="icon" style="margin-inline:auto"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 24 24"><rect height="16" rx="2" width="18" x="3" y="4"></rect><circle cx="9" cy="10" r="2"></circle><path d="M21 16l-5-5-9 9"></path></svg></div><b>商品画像の統一</b><p class="small">サイズ・明るさをそろえる</p></div>
+<div class="card center"><div aria-label="帯" class="icon" style="margin-inline:auto"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 24 24"><rect height="10" rx="1.5" width="18" x="3" y="7"></rect><path d="M7 12h10"></path></svg></div><b>バナー・カテゴリ画像</b><p class="small">おすすめ・季節フェア</p></div>
+<div class="card center"><div aria-label="多言語" class="icon" style="margin-inline:auto"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"></path></svg></div><b>多言語表記</b><p class="small">英語・中国語・韓国語など</p></div>
+<div class="card center"><div aria-label="表示" class="icon" style="margin-inline:auto"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 7.5v5.5M12 16.5v.01"></path></svg></div><b>アレルギー表示</b><p class="small">一目で分かるアイコン</p></div>
+</div>
+</div>
+</section>
+<section class="sec alt">
+<div class="inner narrow">
+<h2 class="h2 center">対応しているPOS・モバイルオーダー</h2>
+<div class="grid g4 mt">
+<div aria-label="スマレジ" class="ph logo-tile" role="img" style="--h:64px"><span>スマレジ</span></div><div aria-label="Airレジ" class="ph logo-tile" role="img" style="--h:64px"><span>Airレジ</span></div><div aria-label="POS+" class="ph logo-tile" role="img" style="--h:64px"><span>POS+</span></div><div aria-label="ダイニー" class="ph logo-tile" role="img" style="--h:64px"><span>ダイニー</span></div>
+<div aria-label="Funfo" class="ph logo-tile" role="img" style="--h:64px"><span>Funfo</span></div><div aria-label="その他" class="ph logo-tile dim" role="img" style="--h:64px"><span>CSV出力できればOK</span></div>
+</div>
+<p class="small center mt">掲載のないシステムもご相談ください。</p>
+</div>
+</section>
+<section class="sec tight">
+<div class="inner banner">
+<div>
+<p class="h3" style="margin:0">戦略メニュー刷新パックに含まれています</p>
+<p class="small" style="margin:0">モバイルオーダー用画像だけのご依頼は、無料相談でお見積もりします。</p>
+</div>
+<a class="btn" href="../../service/menu-engineering/">戦略メニュー刷新</a>
+</div>
+</section>
+</main>
+<section class="sec cta-sec"><div class="narrow"><p class="eyebrow c">Contact</p><h2 class="h2">そのメニュー、<br/>「利益を生む仕組み」に変えませんか？</h2><p class="lead">現在のメニューとPOSデータの状況をお聞かせください。オンラインで全国対応します。</p><div class="btns center"><a class="btn cv lg" href="../../contact/">無料相談する</a><a class="btn lg" href="../../download/">資料をダウンロード</a></div><ul class="cta-points"><li>相談は無料・30分ほど</li><li>オンラインで全国対応</li><li>無理な営業はしません</li></ul><p class="monitor-link"><span class="tag cv">募集中</span>立ち上げ記念 <a href="../../monitor/">モニター店舗を募集中（3〜5店舗限定） →</a></p></div></section>
+<footer class="s-footer"><div class="f-top"><div><a aria-label="トップへ" class="logo" href="../../"><svg aria-hidden="true" viewbox="0 0 40 40"><rect fill="#1f1c17" height="38" rx="11" width="38" x="1" y="1"></rect><path d="M11 28h18" stroke="#c9bba3" stroke-dasharray="1.5 3" stroke-linecap="round" stroke-width="1.6"></path><rect fill="#f7f2e9" height="7" rx="1" width="4" x="11" y="18"></rect><rect fill="#f7f2e9" height="11" rx="1" width="4" x="18" y="14"></rect><rect fill="#c8402a" height="15" rx="1" width="4" x="25" y="10"></rect></svg><span class="lg-t"><b>Menu Logic</b><small>飲食店専門 メニュー戦略デザイン</small></span></a><p class="f-desc">POSデータと行動経済学で、客単価と粗利率を引き上げるメニューを設計します。料理写真は100%実写。オンラインで全国対応。</p></div><div class="grid g4"><div><b>Service<small>サービス</small></b><a href="../../service/menu-engineering/">戦略メニュー刷新</a><a href="../../service/hybrid-ui/">ハイブリッドUI設計</a><a href="../../service/subscription/">月額伴走プラン</a><a href="../../service/growth/">グロース顧問</a><a href="../../price/">料金プラン</a></div><div><b>Company<small>会社情報</small></b><a href="../../about/">私たちについて</a><a href="../../about/company/">会社概要</a><a href="../../quality/">制作ポリシー</a></div><div><b>Resources<small>お役立ち</small></b><a href="../../download/">資料ダウンロード</a><a href="../../faq/">よくある質問</a><a href="../../flow/">ご依頼の流れ</a></div><div><b>Partners<small>募集</small></b><a href="../../monitor/">モニター店舗募集</a></div></div></div><div class="foot-bottom"><a href="../../privacy/">プライバシーポリシー</a><a href="../../terms/">サイト利用規約</a><span class="copy">© 20XX Menu Logic（仮）</span></div></footer><div class="sp-cta"><a class="btn" href="../../download/">資料DL</a><a class="btn cv" href="../../contact/">無料相談する</a></div>
+</div>
+</body></html>

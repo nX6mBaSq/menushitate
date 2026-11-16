@@ -1,0 +1,8 @@
+# Apache 用の設定（Nginx などでは使われません）
+ErrorDocument 404 /404.html
+DirectoryIndex index.html
+AddDefaultCharset UTF-8
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
