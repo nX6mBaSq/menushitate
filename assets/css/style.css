@@ -154,6 +154,12 @@ img, svg { max-width: 100%; }
 .sec-head { max-width: 760px; margin: 0 auto 56px; text-align: center; }
 .sec-head .lead { margin-bottom: 0; }
 
+
+/* 紹介動画 */
+.movie { max-width: 880px; margin: 0 auto; }
+.movie video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; background: var(--green); border-radius: var(--r); box-shadow: var(--shadow-lg); }
+.movie .credit { margin: 12px 0 0; color: var(--ink-3); font-size: 12px; text-align: right; }
+
 .small { color: var(--ink-2); font-size: 13.5px; line-height: 1.75; }
 .mt { margin-top: 28px; }
 .mt-l { margin-top: 64px; }
@@ -727,6 +733,7 @@ label.fileup:has(input:focus-visible) { outline: 2px solid var(--gold); outline-
   .h3 { font-size: 16px; }
   .lead { font-size: 15px; }
   .sec-head { margin-bottom: 36px; }
+  .movie .credit { text-align: left; }
   .hero { padding: 36px 20px 44px; }
   .hero::after { display: none; }
   .g2, .g3, .split, .side, .feature { grid-template-columns: 1fr; }
